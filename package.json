@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-etrusted-credentials",
   "version": "0.1.0",
-  "description": "",
+  "description": "Adds credential for Etrusted.com OAuth2 API",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Christoph Kleine",
+    "email": "christophkleine@mount7.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/ckleinem7/n8n-nodes-etrusted-credentials"
   },
   "engines": {
     "node": ">=20.15"
@@ -33,13 +33,9 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/ETrustedOAuth2Api.credentials.js"
     ],
-    "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
-    ]
+    "nodes": []
   },
   "devDependencies": {
     "@typescript-eslint/parser": "~8.32.0",
